@@ -1,0 +1,313 @@
+.section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12vh 0;
+    background-image: url(./assets/images/bg_sobre.jpg);
+    gap: 30px;
+
+    
+  .all_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 400px;
+      height: 500px;
+      border-radius: 16px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      overflow: hidden;
+      position: relative;
+      left: 0;
+      transition: 1s;
+      cursor: pointer;
+    }
+    
+    
+    .card:hover {
+      background-color: #f5f5f5c2;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 -2px 2px rgba(255,255,255,0.2);
+      transform: translateY(-20px);
+      transition: 200ms;
+      transition-timing-function: ease-in;
+    }
+
+    .card:hover > img {
+      filter: brightness(0.5);
+      transition: 200ms;
+    }
+
+    .card:not(:hover) > img {
+      color: #ad0000;
+      transition: 200ms;
+    }
+
+    img{
+      width: 100%;
+    }
+    
+    .flex_row{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      height: 100%;
+      padding: 10% 6%;
+    }
+    .flex_collum{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left:  10%;
+    }
+
+    .flex_collum h2{
+      font-size: 30px;
+      padding-bottom: 5%;
+      color: rgb(53, 53, 53);
+    }
+
+    p{
+      font-size: 18px;
+      text-align: left;
+      color: rgb(105, 105, 105);
+    }
+
+    i{
+      font-size: 40px;
+    }
+
+    .card:hover > .flex_row > i {
+      color: #ad0000;
+      transition: 200ms;
+    }
+
+    }
+  }
+  
+
+  @media only screen and (max-width: 1280px) { 
+    .section3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10vh 0;
+      gap: 25px;
+  
+      
+    .all_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+  
+      .card {
+        width: 300px;
+        height: 400px;
+        }
+
+        .flex_row{
+          padding: 5% 5%;
+        }
+        .flex_collum h2{
+          font-size: 30px;
+          padding-bottom: 5%;
+          color: rgb(53, 53, 53);
+        }
+    
+        p{
+          font-size: 14px;
+        }
+    
+        i{
+          font-size: 34px;
+        }
+      }
+    }
+  }
+  
+  
+  @media only screen and (max-width: 1030px) {
+    .section3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10vh 0;
+      gap: 25px;
+  
+      
+    .all_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+  
+      .card {
+        width: 250px;
+        height: 350px;
+        }
+
+        .flex_collum h2{
+          font-size: 26px;
+          padding-bottom: 5%;
+          color: rgb(53, 53, 53);
+        }
+    
+        p{
+          font-size: 13px;
+        }
+    
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 770px) {
+    .section3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 7vh 0;
+      gap: 25px;
+  
+      
+    .all_box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+  
+      .card {
+        width: 200px;
+        height: 270px;
+        }
+
+        .flex_collum h2{
+          font-size: 20px;
+          padding-bottom: 5%;
+          color: rgb(53, 53, 53);
+        }
+    
+        p{
+          font-size: 10px;
+        }
+    
+        i{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .section3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 7vh 0;
+      gap: 25px;
+  
+      
+    .all_box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+  
+      .card {
+        width: 80%;
+        height: 300px;
+        }
+
+        .hidden_img{
+          position: relative;
+          overflow: hidden;
+          height: 400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img{
+          position: absolute;
+        }
+        .flex_collum h2{
+          font-size: 30px;
+          padding-bottom: 5%;
+          color: rgb(53, 53, 53);
+        }
+    
+        p{
+          font-size: 14px;
+        }
+    
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .section3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5vh 0;
+      gap: 25px;
+  
+      
+    .all_box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+  
+      .card {
+        width: 80%;
+        height: 200px;
+        }
+
+        .hidden_img{
+          position: relative;
+          overflow: hidden;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img{
+          position: absolute;
+        }
+        .flex_collum h2{
+          font-size: 20px;
+          padding-bottom: 1%;
+          color: rgb(53, 53, 53);
+        }
+    
+        p{
+          font-size: 12px;
+        }
+    
+        i{
+          font-size: 16px;
+        }
+      }
+    }
+  }
