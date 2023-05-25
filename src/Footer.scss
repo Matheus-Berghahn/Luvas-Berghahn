@@ -5,7 +5,7 @@
   background-color: rgb(26, 26, 26);
   height: 200px;
   
-    h2{
+    .footer_txt{
       line-height: 20px;
       max-width: 650px;
       margin: 0 auto;
@@ -27,7 +27,7 @@
 
 
 @media only screen and (max-width: 1030px) {
-  h2{
+  .footer_txt{
     line-height: 20px;
     max-width: 600px !important;
     font-size: 13px !important;
@@ -35,7 +35,7 @@
 }
 
 @media only screen and (max-width: 770px) {
-  h2{
+  .footer_txt{
     line-height: 20px;
     max-width: 500px !important;
     font-size: 12px !important;
@@ -50,7 +50,7 @@
     background-color: rgb(26, 26, 26);
     height: 150px;
 
-  h2{
+  .footer_txt{
     line-height: 12px;
     max-width: 380px !important;
     font-size: 10px !important;
@@ -66,7 +66,7 @@
     background-color: rgb(26, 26, 26);
     height: 120px;
 
-  h2{
+  .footer_txt{
     line-height: 13px;
     max-width: 260px !important;
     font-size: 10px !important;
@@ -81,7 +81,7 @@
     background-color: rgb(26, 26, 26);
     height: 150px;
 
-  h2{
+  .footer_txt{
     line-height: 12px;
     max-width: 280px !important;
     font-size: 10px !important;

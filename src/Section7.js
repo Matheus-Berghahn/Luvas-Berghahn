@@ -6,7 +6,7 @@ import "./Section7.scss";
 function Section7() {
   return (
     <>
-    <div  className="section7">
+    <div  className="Section7">
     <div className="s7_title">
           <h2>Processo de fabricação</h2>
       </div>

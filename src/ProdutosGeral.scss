@@ -85,3 +85,18 @@
   }
 }
   
+@media only screen and (max-width: 480px) {
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px !important;
+    height: 300px !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    transition: 400ms;
+  }
+}
