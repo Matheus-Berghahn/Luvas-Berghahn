@@ -2,90 +2,108 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 12vh 0;
-    background-image: url(./assets/images/bg_sobre.jpg);
     gap: 30px;
+    background-color: #ffffff;
+    position: relative;
+    padding-top: 3%;
+   
 
     
   .all_box{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 50px;
+    gap: 30px;
 
     .card {
+      filter: brightness(100%);
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      width: 400px;
-      height: 500px;
-      border-radius: 16px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      background-color: #ffffff;
       overflow: hidden;
       position: relative;
       left: 0;
       transition: 1s;
-      cursor: pointer;
-    }
-    
-    
-    .card:hover {
-      background-color: #f5f5f5c2;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 -2px 2px rgba(255,255,255,0.2);
-      transform: translateY(-20px);
-      transition: 200ms;
-      transition-timing-function: ease-in;
+      box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.4);
+      width: 320px;
+      padding: 3% 0;
+      
     }
 
-    .card:hover > img {
-      filter: brightness(0.5);
-      transition: 200ms;
+    .hidden_img{
+      overflow: hidden;
     }
 
-    .card:not(:hover) > img {
-      color: #ad0000;
-      transition: 200ms;
+    .card:hover > .hidden_img >  img {
+      filter: brightness(1);
+      transform: scale(1.1) !important;
+      transition: 700ms; 
+    }
+    .card:not(:hover) > .hidden_img >  img {
+      filter: brightness(0.8);
+      transform: scale(1) !important;
+      transition: 700ms; 
     }
 
     img{
+      filter: brightness(0.8);
+      transform: scale(1);
       width: 100%;
-    }
-    
-    .flex_row{
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-evenly;
-      height: 100%;
-      padding: 10% 6%;
     }
     .flex_collum{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      padding-left:  10%;
+      padding: 5% 8%;
+      gap: 20px;
     }
 
+    .flex_collum i{
+      font-size: 25px !important;
+      color: rgb(71, 71, 71);
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
+      position: relative;
+    }
+
+    .flex_collum i::before,
+    .flex_collum i::after {
+      content: '';
+      position: absolute;
+      background-color: #dd0000;
+      width: 40%;
+      height: 1px;
+      
+    }
+    
+    .flex_collum i::before {
+      top: 50%;
+      left: 0px;
+    }
+    
+    .flex_collum i::after {
+      top: 50%;
+      right: 0px;
+    }
     .flex_collum h2{
-      font-size: 30px;
-      padding-bottom: 5%;
+      font-size: 25px !important;
       color: rgb(53, 53, 53);
+      font-weight: 300;
+      text-align: center;
+      width: 100%;
     }
 
     p{
-      font-size: 18px;
-      text-align: left;
+      font-size: 14px !important;
+      text-align: center;
       color: rgb(105, 105, 105);
-    }
-
-    i{
-      font-size: 40px;
-    }
-
-    .card:hover > .flex_row > i {
-      color: #ad0000;
-      transition: 200ms;
+      line-height: 1.3em;
+   
     }
 
     }
@@ -109,26 +127,16 @@
       gap: 40px;
   
       .card {
-        width: 300px;
-        height: 400px;
-        }
-
-        .flex_row{
-          padding: 5% 5%;
+        width: 280px;
         }
         .flex_collum h2{
-          font-size: 30px;
-          padding-bottom: 5%;
-          color: rgb(53, 53, 53);
+          font-size: 22px !important;
         }
     
         p{
-          font-size: 14px;
+          font-size: 13px !important;
         }
     
-        i{
-          font-size: 34px;
-        }
       }
     }
   }
@@ -141,32 +149,29 @@
       flex-direction: column;
       padding: 10vh 0;
       gap: 25px;
-  
+    
       
     .all_box{
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
-      gap: 40px;
+      gap: 5px;
   
       .card {
         width: 250px;
-        height: 350px;
+        }
+
+        .flex_collum{
+          gap: 10px;
         }
 
         .flex_collum h2{
           font-size: 26px;
-          padding-bottom: 5%;
-          color: rgb(53, 53, 53);
         }
     
         p{
-          font-size: 13px;
-        }
-    
-        i{
-          font-size: 30px;
+          font-size: 12px !important;
         }
       }
     }
@@ -186,17 +191,14 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      gap: 40px;
+      gap: 8px;
   
       .card {
         width: 200px;
-        height: 270px;
         }
 
         .flex_collum h2{
-          font-size: 20px;
-          padding-bottom: 5%;
-          color: rgb(53, 53, 53);
+          font-size: 16px !important;
         }
     
         p{
@@ -220,16 +222,16 @@
   
       
     .all_box{
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      gap: 40px;
+      gap: 20px;
   
       .card {
-        width: 80%;
-        height: 300px;
+        width: 70%;
         }
 
         .hidden_img{
@@ -245,9 +247,7 @@
           position: absolute;
         }
         .flex_collum h2{
-          font-size: 30px;
-          padding-bottom: 5%;
-          color: rgb(53, 53, 53);
+          font-size: 25px !important;
         }
     
         p{

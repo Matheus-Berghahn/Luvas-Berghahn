@@ -11,10 +11,10 @@ function ProdutosAventais (){
         <>
         <div className="produtos_geral max-width">
         <div className="all_box">
+          
             <div className="card">
-              <div>
+            <a href='/produtos/luvas/produto1'>
                 <img src={img_aventais1}></img>
-              </div>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 01</p>
@@ -22,69 +22,84 @@ function ProdutosAventais (){
                     <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                   </a>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais2}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 02</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais1}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 03</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
-              
+            </a>        
             </div>
+
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais2}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 04</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais1}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 05</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais2}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 06</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais1}></img>
                 <div className="flex_collum">
                   <h2>Luvas de raspa</h2>
                   <p>Referência: 07</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             <div className="card">
+            <a href='/produtos/luvas/produto1'>
               <img src={img_aventais2}></img>
                 <div className="flex_collum">
                   <h2> Distribuição</h2>
                   <p>Referência: 08</p>
                   <button className='btn'>Ver mais fotos <i className="chevron"><FontAwesomeIcon icon={faChevronRight} /></i></button>
                 </div>
+            </a>
             </div>
 
             

@@ -1,43 +1,12 @@
 .section2{
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url(./assets/images/bg.jpg);
+  background-image: url(./assets/images/bg2.jpg);
   background-position: center;
   background-size: cover;
-  padding: 12% 3%;
-  animation: change 15s linear 0s infinite;
+  padding: 10% 3%;
+  padding-bottom: 8%;
   
-
-  @keyframes change{
-    0%{
-      background-image: url(./assets/images/bg.jpg);
-    }
-    23%{
-      background-image: url(./assets/images/bg.jpg);
-    }
-    25%{
-      background-image: url(./assets/images/bg2.jpg);
-    }
-    48%{
-      background-image: url(./assets/images/bg2.jpg);
-    }
-    50%{
-      background-image: url(./assets/images/bg3.jpg);
-    }
-    73%{
-      background-image: url(./assets/images/bg3.jpg);
-    }
-    75%{
-      background-image: url(./assets/images/bg4.jpg);
-    }
-    98%{
-      background-image: url(./assets/images/bg4.jpg);
-    }
-    100%{
-      background-image: url(./assets/images/bg.jpg);
-    }
-    
-  }
   .s2_txt {
     width: 100%;
     display: flex;
@@ -61,8 +30,8 @@
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #ad0000;
-  border-radius: 3px;
+  border: 1px solid #ad0000;
+  
   color: #ad0000;
   cursor: pointer;
   display: flex;

@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #fcfcfc;
-    padding-top: 5vh;
+    padding-bottom: 5%;
     gap: 30px;
+    background-color: #ececec;
 
   .all_box{
     max-width: 1280px;
@@ -25,27 +25,29 @@
       overflow: hidden;
       position: relative;
       left: 0;
-      transition: 1s;
+      transition: 400ms;
     }
     .card:hover {
       background-color: #f5f5f5c2;
       box-shadow: 0 5px 10px rgba(0,0,0,0.3), inset 0 -2px 2px rgba(255,255,255,0.2);
-      transform: translateY(-20px) scale(1.05);
+      transform: translateY(-5px) scale(1.01);
       transition: 200ms;
       transition-timing-function: ease-in;
     }
-    .card:hover > img {
-      filter: brightness(1) !important;
-      transition: 200ms;
-    }
-    .card:not(:hover) > img {
-      transition: 200ms;
-    }
-    
+
     img{
       width: 100%;
       filter: brightness(0.7) !important;
     }
+    .card:hover > a img {
+      filter: brightness(1) !important;
+      transition: 200ms;
+    }
+    .card:not(:hover) > a img {
+      transition: 200ms;
+    }
+    
+    
 
     .flex_collum{
       display: flex;
@@ -68,12 +70,18 @@
       border: none;
       padding: 20px 0;
       cursor: pointer;
+      font-size: 16px;
     }
     .chevron{
       font-size: 12px;
       background: none;
       cursor: pointer;
     }
+  }
+
+  a{
+    text-decoration: none;
+    cursor: default;
   }
 }
   
