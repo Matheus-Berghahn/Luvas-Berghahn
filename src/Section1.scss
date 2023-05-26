@@ -212,7 +212,7 @@ button:hover > .fone{
 @media only screen and (max-width: 480px) {
   .section1{
     position: relative;
-    height: 240px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     padding: 3vh 3%;
@@ -220,6 +220,7 @@ button:hover > .fone{
 
 
     img{
+      padding-top: 30px;
       width: 150px;
     }
 
@@ -234,12 +235,14 @@ button:hover > .fone{
     }
     .s1_flex_btn{
       gap: 10px;
-      margin: 0 0px;
+      
     }
     button{
       width: 120px;
       font-size: 14px;
       padding: 12px;
+      margin-bottom: 30px;
+      
     }
   }
 }
