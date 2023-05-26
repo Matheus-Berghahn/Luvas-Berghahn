@@ -39,7 +39,7 @@ const Produto1 = () => {
             </Swiper>
                 <div className='flex_collum'>
                     <h2>Luvas de raspa</h2>
-                    <h3>As luvas de couro são um acessório clássico e elegante que trazem consigo uma série de benefícios. Além de conferirem um toque sofisticado a qualquer traje, essas luvas oferecem proteção e conforto às mãos. Seu material resistente garante durabilidade, enquanto o forro interno proporciona uma sensação suave e agradável ao toque. Com um bom par de luvas de couro, é possível manter as mãos aquecidas nos dias frios, sem comprometer a destreza dos dedos. Seja para um passeio casual ou um evento formal, as luvas de couro são um complemento versátil e atemporal que nunca perde seu charme.</h3>
+                    <h3>As luvas de couro são um acessório clássico e elegante que trazem consigo uma série de benefícios. Além de conferirem um toque sofisticado a qualquer traje, essas luvas oferecem proteção e conforto às mãos.</h3>
                     <div className='ref_btn'>
                         <p>Referência: 01</p>
                         <a href='/produtos/luvas'>
