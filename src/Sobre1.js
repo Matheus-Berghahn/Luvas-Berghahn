@@ -11,7 +11,39 @@ import { faBook} from '@fortawesome/free-solid-svg-icons'
 import { faLightbulb} from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import { faPaste} from '@fortawesome/free-solid-svg-icons'
+import { Waypoint } from 'react-waypoint';
+import React, { useState } from 'react';
+
 function Sobre1() {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const handleWaypointEnter = () => {
+    setIsVisible(true);
+  };
+
+  const [isVisible2, setIsVisible2] = useState(false);
+  const handleWaypointEnter2 = () => {
+    setIsVisible2(true);
+  };
+  const handleWaypointLeave2 = () => {
+    setIsVisible2(false);
+  };
+
+  const [isVisible3, setIsVisible3] = useState(false);
+  const handleWaypointEnter3 = () => {
+    setIsVisible3(true);
+  };
+  const handleWaypointLeave3 = () => {
+    setIsVisible3(false);
+  };
+  
+  const [isVisible4, setIsVisible4] = useState(false);
+  const handleWaypointEnter4 = () => {
+    setIsVisible4(true);
+  };
+  const handleWaypointLeave4 = () => {
+    setIsVisible4(false);
+  };
   return (
     <div className='sobre1 max-width'>
       <div className='header_sobre'>
@@ -22,9 +54,9 @@ function Sobre1() {
         <h2>Conheça a nossa história</h2>
         <p>Na nossa jornada, atravessamos fronteiras, desafiamos limites e buscamos incansavelmente a excelência. Com uma equipe apaixonada e comprometida, unimos nossa expertise à inovação, criando soluções que transformam o cenário atual. </p>
       </div>
-
+      <Waypoint onEnter={handleWaypointEnter}  bottomOffset="30%" />
       <div className="sobre">
-          <div className="sobre_flex">
+          <div className={`sobre_flex ${isVisible ? "anima-sobre_flex" : "not-anima-sobre_flex"}`}>
               <h2><i><FontAwesomeIcon icon={faBook} /></i> Sobre a Luvas Berghahn</h2>
               <div className="sobre_text_anos">
                   <h3 className="text_anos">Há uma década, iniciamos nossa jornada como uma empresa familiar dedicada à proteção de vidas e à segurança no ambiente de trabalho. Desde então, temos trabalhado incansavelmente para oferecer soluções confiáveis de Equipamentos de Proteção Individual (EPI).
@@ -32,13 +64,13 @@ function Sobre1() {
                     <img src={img_10anos} alt="#" />
               </div>
           </div>
-          <div className="sobre_flex">
+          <div className={`sobre_flex ${isVisible ? "anima-sobre_flex" : "not-anima-sobre_flex"}`}>
             <h2><i><FontAwesomeIcon icon={faLightbulb} /></i> Criação da empresa</h2>
               <h3>A criação de uma empresa é um ato de coragem, visão e determinação. É o momento em que um sonho ganha forma e se transforma em uma realidade empreendedora. Iniciar uma empresa envolve planejamento, pesquisa e uma dose de ousadia. Quando decidimos criar uma empresa, abrimos as portas para novas oportunidades e desafios. É a chance de trilhar um caminho próprio, construir um legado e deixar a nossa marca no mundo dos negócios. Cada empresa tem uma história única, um propósito que a impulsiona e valores que guiam suas ações. A jornada empreendedora é repleta de altos e baixos. É preciso enfrentar obstáculos, superar dificuldades e estar disposto a aprender com os erros.</h3>
           </div>
       </div>
-
-      <div className="content1 margin_content">
+      <Waypoint onEnter={handleWaypointEnter2} onLeave={handleWaypointLeave2}  bottomOffset="50%" />
+      <div  className={`content1 margin_content ${isVisible2 ? "anima-margin_content" : "not-anima-margin_content"}`}>
         <img src={img_func} alt="funcionarios" />
           <div  className="center_flex">
             <h2><i><FontAwesomeIcon icon={faPeopleGroup} /></i> Equipe</h2>
@@ -46,7 +78,8 @@ function Sobre1() {
           </div>
           
         </div>
-        <div className="content2 margin_content">
+        <Waypoint onEnter={handleWaypointEnter3} onLeave={handleWaypointLeave3} bottomOffset="50%" />
+        <div className={`content2 margin_content ${isVisible3 ? "anima-margin_content" : "not-anima-margin_content"}`}>
           <img src={img_chefe} alt="chefe" />
           <div className="center_flex">
             <h2><i><FontAwesomeIcon icon={faUserTie} /></i> Fundador</h2>
@@ -55,7 +88,8 @@ function Sobre1() {
             
           </div>
         </div>
-        <div className="content3 margin_content">
+        <Waypoint onEnter={handleWaypointEnter4} onLeave={handleWaypointLeave4}  bottomOffset="50%" />
+        <div className={`content3 margin_content ${isVisible4 ? "anima-margin_content" : "not-anima-margin_content"}`}>
         <img src={img_empresa} alt="Empresa" />
           <div  className="center_flex">
             <h2><i><FontAwesomeIcon icon={faLocationDot} /></i> Venha conhecer!</h2>

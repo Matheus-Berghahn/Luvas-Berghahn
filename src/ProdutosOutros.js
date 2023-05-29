@@ -1,5 +1,5 @@
 import './ProdutosGeral.scss';
-import img_distribuição from "./assets/images/distribuicao.jpg";
+import img_distribuição from "./assets/images/luvas1.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
