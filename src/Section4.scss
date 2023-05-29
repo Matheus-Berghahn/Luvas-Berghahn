@@ -6,6 +6,7 @@
   padding-top: 22vh;
   width: 100%;
   background-color: white;
+  overflow: hidden;
 
 
   .s4_flex{
@@ -19,6 +20,9 @@
       justify-content: center;
       align-items: flex-end;
       flex-direction: column;
+      transform: translateX(-200px) !important;
+      opacity: 0;
+    }
       h2{
         position: relative;
         color: rgb(53, 53, 53);
@@ -49,21 +53,30 @@
       }
     }
 
+    .s4_left.anima-s4_left{
+      transition: 800ms;
+      transform: translateX(0px) !important;
+      opacity: 1 !important;
+    }
     .s4_right{
       width: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
+      transform: translateX(200px) !important;
+      opacity: 0 !important;
       img{
         width: 400px;
       }
     }
-  }
- 
 
-}
+    .s4_right.anima-s4_right{
+      transition: 800ms;
+      transform: translateX(0px) !important;
+      opacity: 1 !important;
+    }
+  }
 
 @media only screen and (max-width: 1280px) {
   .section4{

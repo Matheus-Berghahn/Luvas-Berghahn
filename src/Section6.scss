@@ -13,6 +13,8 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+    transform: translateX(-200px) !important;
+    opacity: 0 !important;
     h2{
       position: relative;
       color: rgb(53, 53, 53);
@@ -86,6 +88,11 @@
     }
   }
 
+  .s6_left.anima-s6_left{
+    transition: 800ms;
+    transform: translateX(0px) !important;
+    opacity: 1 !important;
+  }
   .react-parallax{
     height: 300px;
   }
